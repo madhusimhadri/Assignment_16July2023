@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <h2 class="text-center text-dark mt-5">Login</h2>
+      <div class="card my-5">
+        <form class="card-body cardbody-color p-lg-5">
+          <div class="mb-3">
+            <input type="text" class="form-control"  placeholder="username" [(ngModel)] = "userName" name="userName">
+          </div>
+          <div class="mb-3">
+            <input type="password" class="form-control"  placeholder="password" [(ngModel)] = "password" name="password">
+          </div>
+          <div class="text-center"><button [disabled]="!userName || !password" type="submit" class="btn btn-color px-5 mb-5 w-100" (click)="onSubmit()">Login</button></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-template #loginFailed>
+
+  <!-- <h2 mat-dialog-title>Login Failed</h2> -->
+<mat-dialog-content class="mat-typography">
+ <h2>Invalid user details. please try again</h2>
+
+</mat-dialog-content>
+<mat-dialog-actions align ="center">
+  <button class="btn btn-primary" mat-button [mat-dialog-close]="true" cdkFocusInitial>ok</button>
+</mat-dialog-actions>
+
+</ng-template>
+
+<ng-template #loginSuccess>
+
+  <!-- <h2 mat-dialog-title>Login Failed</h2> -->
+<mat-dialog-content class="mat-typography">
+ <h2>Login Successfull! redirecting to home</h2>
+
+</mat-dialog-content>
+<mat-dialog-actions align ="center">
+  <button class="btn btn-primary" mat-button [mat-dialog-close]="true" cdkFocusInitial  (click)="takeHome()">ok</button>
+</mat-dialog-actions>
+
+</ng-template>

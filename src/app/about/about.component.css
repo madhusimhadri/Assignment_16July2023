@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex; /*  to occupy remaining space strething the main content */
+  flex-direction: column;
+}
+
+/* Main Content Styles */
+.main {
+  padding: 20px;
+}
+
+.about {
+  margin-bottom: 40px;
+}
+
+h1 {
+  color: black;
+  font-size: 28px;
+}
+
+h2 {
+  color: black;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+h3{
+  font-weight: bold;
+}
+p {
+  color: black;
+  line-height: 1.5;
+}
+
+ul,
+ol {
+  color: black;
+  padding-left: 20px;
+  line-height: 1.5;
+}
+
+.contact-person {
+  background-color: whitesmoke;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-person h2 {
+  color: grey;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-person p {
+  color: grey;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+
+.cs-exclusive{
+  background-color: gold;
+  border: solid 2px black;
+  border-radius: 5px;
+
+
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p,
+  ul,
+  ol {
+    font-size: 16px;
+  }
+}

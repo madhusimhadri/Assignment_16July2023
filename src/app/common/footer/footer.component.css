@@ -1,0 +1,7 @@
+.footer {
+  background-color: gray;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  flex-shrink: 0; /*fix the footer at the bottom */
+}

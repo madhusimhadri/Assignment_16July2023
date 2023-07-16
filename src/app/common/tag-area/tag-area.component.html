@@ -1,0 +1,27 @@
+<div class="form-control" >
+  <span class="d-flex">
+    <mat-chip-grid #chipGrid >
+      <mat-chip-row *ngFor="let user of users">
+        {{ user }}
+      </mat-chip-row>
+    </mat-chip-grid>
+    <input
+      type="text"
+      style="border: none"
+      [matChipInputFor]="chipGrid"
+      matInput
+      [matAutocomplete]="auto"
+      (input)="showAutocompleteOptions($event)"
+      [(ngModel)]="inpVal"
+    />
+  </span>
+
+  <mat-autocomplete
+    #auto="matAutocomplete"
+    (optionSelected)="onOptionSelected($event)"
+  >
+    <mat-option *ngFor="let option of filteredOptions" [value]="option">
+      {{ option }}
+    </mat-option>
+  </mat-autocomplete>
+</div>

@@ -1,0 +1,65 @@
+
+
+.head-container {
+  /* display: flex; */
+  /* justify-content: space-between; */
+  background-color: grey;
+  height: 60px;
+
+}
+
+.nav {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  height: inherit;
+}
+
+.nav-item {
+  margin-right: 10px;
+}
+
+.username {
+  margin-left: auto;
+  color: brown;
+  font-weight: bold;
+}
+
+/* .login,
+.logout {
+  cursor: pointer;
+} */
+
+.cs-active{
+
+  font-weight: bold;
+
+}
+
+a{
+  color: white !important;
+}
+
+/* .cs-active a{
+  color: white !important;
+} */
+
+.login{
+  margin-left: auto;
+  align-self: flex-end;
+  align-self: center;
+
+}
+
+.username{
+  padding: 10px;
+  font-weight: bold;
+  margin-left: auto;
+}
+
+.lg-btn{
+  color: white;
+}
+
+
+

@@ -1,0 +1,52 @@
+<div class="head-container">
+  <ul class="nav">
+    <li class="nav-item" [routerLinkActive]="'cs-active'">
+      <a class="nav-link" [routerLink]="'/home'">Home</a>
+    </li>
+    <li *ngIf="privateAccess" class="nav-item" [routerLinkActive]="'cs-active'">
+      <a class="nav-link" [routerLink]="'/gallery'">Gallery</a>
+    </li>
+    <li class="nav-item" [routerLinkActive]="'cs-active'">
+      <a class="nav-link" [routerLink]="'/about'">About</a>
+    </li>
+
+    <li *ngIf="privateAccess" class="login username">{{ userName }}</li>
+
+    <li
+      *ngIf="!privateAccess"
+      class="btn btn-small lg-btn"
+      [ngClass]="{ login: !privateAccess }"
+      (click)="loginUser()"
+    >
+      Login
+    </li>
+    <li
+      *ngIf="privateAccess"
+      class="btn btn-small lg-btn"
+      [ngClass]="{ login: !privateAccess }"
+      (click)="openlogOut()"
+    >
+      Logout
+    </li>
+  </ul>
+</div>
+
+<ng-template #logoutUser>
+  <mat-dialog-content class="mat-typography">
+    <h2>Are you sure you want to logout?</h2>
+  </mat-dialog-content>
+  <mat-dialog-actions align="end">
+    <button class="btn btn-secondary mx-2" mat-button mat-dialog-close>
+      Cancel
+    </button>
+    <button
+      class="btn btn-primary"
+      mat-button
+      [mat-dialog-close]="true"
+      cdkFocusInitial
+      (click)="logOut()"
+    >
+      Yes
+    </button>
+  </mat-dialog-actions>
+</ng-template>

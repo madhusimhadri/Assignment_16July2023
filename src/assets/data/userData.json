@@ -1,0 +1,33 @@
+[
+  {
+    "userid": "alex@media.com",
+    "password": "alex2000",
+    "username": "alex"
+  },
+  {
+    "userid": "lucifer@media.com",
+    "password": "luci@007",
+    "username": "lucifer"
+  },
+  {
+    "userid": "flash@media.com",
+    "password": "cheppanubrother",
+    "username": "flash"
+  },
+  {
+    "userid": "steve@media.com",
+    "password": "hellobrother",
+    "username": "steve"
+  },
+  {
+    "userid": "tony@media.com",
+    "password": "routeno32",
+    "username": "tony"
+  },
+  {
+    "userid": "madhu@media.com",
+    "password": "password",
+    "username": "madhu"
+  }
+
+]
