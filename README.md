@@ -1,27 +1,48 @@
 # IMAssignment
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
+Note: please find the attached screenshots for working application reference
 
-## Development server
+src/assets/assignmentScreenshots folder
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Libraries used:
+animations, cdk, cli, common, compiler, compiler-cli, core
+forms, material, platform-browser, platform-browser-dynamic
+router
 
-## Code scaffolding
+*Implemented all the features mentioned in the project doc.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Login to the application using the below user credentials
 
-## Build
+username: madhu
+password: password
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+or 
 
-## Running unit tests
+username: alex
+password: alex2000
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1.public users:
 
-## Running end-to-end tests
+Home
+About
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+2.Private users: (Login)
 
-## Further help
+Home
+Gallery
+About
+Displayed logged in user on the header
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+3.Body Content in Home and About
+
+Placed some exclusive content which is displayed only to logged(private) in users.
+
+4. Added functionality to mention a user in the text area.
+
+5. Added a functionality to redirect the user to a "error-404 not found" component if the user tries to access the url of the gallery without logging in.
+
+6. Logout functionality
+
+on click of logout redirects to home page
+
+
